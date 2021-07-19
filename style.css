@@ -38,8 +38,8 @@ h1 {
     background-color: rgba(0, 0, 0, 0.2);
 }
 .key.active {
-    border: 2px solid #FF0;
-    color: #FF0;
+    border: 2px solid rgb(95, 6, 6);
+    color: rgb(95, 6, 6);
 }
 
 .composer {
