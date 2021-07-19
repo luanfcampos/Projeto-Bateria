@@ -23,6 +23,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    
 }
 .key {
     width: 80px;
@@ -34,6 +35,7 @@ h1 {
     align-items: center;
     font-size: 30px;
     font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .key.active {
     border: 2px solid #FF0;
@@ -49,11 +51,15 @@ h1 {
     outline: none;
     font-size: 17px;
     padding: 10px 15px;
+    background-color: none;
+    background: rgba(0, 0, 0, 0.281);
+    border: 2px solid #FFF;
+    color: #FFF;
 }
 .composer button {
     width: 100%;
     height: 40px;
-    background: none;
+    background: rgba(0, 0, 0, 0.281);
     border: 2px solid #FFF;
     color: #FFF;
     font-size: 16px;
@@ -62,6 +68,7 @@ h1 {
 }
 .composer button:hover {
     background-color: rgba(0, 0, 0, 0.2);
+    
 }
 
 footer {
@@ -69,3 +76,16 @@ footer {
     color: #FFF;
     font-size: 13px;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(255, 255, 255);
+  }
